@@ -1,0 +1,97 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.WaatEditor {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  width: 1200px;
+  min-height: 100px;
+  margin: 0 auto; }
+
+.WaatEditor-normalizer {
+  display: block;
+  float: none !important; }
+
+.WaatEditor-placeholder {
+  width: 100%;
+  opacity: 0.3; }
+
+/* Menu */
+.Waat-Editor-menu {
+  display: block;
+  visibility: hidden;
+  position: fixed;
+  z-index: 500;
+  overflow: hidden;
+  color: #fff;
+  -webkit-transition: visibility .1s ease-in;
+  -moz-transition: visibility .1s ease-in;
+  -ms-transition: visibility .1s ease-in;
+  -o-transition: visibility .1s ease-in;
+  transition: visibility .1s ease-in; }
+
+.Waat-Editor-menu ul {
+  display: inline-block;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+
+.Waat-Editor-menu li {
+  background: #000;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1em;
+  line-height: 1em;
+  border-right: 1px solid #888;
+  -webkit-transition: all .25s ease-in;
+  -moz-transition: all .25s ease-in;
+  -ms-transition: all .25s ease-in;
+  -o-transition: all .25s ease-in;
+  transition: all .25s ease-in; }
+
+.Waat-Editor-menu li:first-child {
+  border-radius: 5px 0 0 5px;
+  border-left: none; }
+
+.Waat-Editor-menu li:last-child {
+  border-radius: 0 5px 5px 0;
+  border-right: none; }
+
+.Waat-Editor-menu li:hover {
+  background: #888; }
+
+.Waat-Editor-sidemenu {
+  float: none;
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  visibility: hidden; }
+
+.Waat-Editor-sidemenu ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.Waat-Editor-sidemenu li {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  float: left;
+  display: inline;
+  padding: 1em;
+  line-height: 1em; }
+
+.Waat-Editor-sidemenu li:hover {
+  background: #ccc; }

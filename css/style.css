@@ -1,0 +1,6 @@
+@media (min-width: 1200px) {
+  .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; } }

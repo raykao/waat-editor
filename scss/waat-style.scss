@@ -1,0 +1,228 @@
+$orange: #FF3818;
+$orange-light: #fcb8ab;
+$white: #fff;
+$black: #333;
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 2em;
+  color: $black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arvo, serif;
+}
+
+#main-nav {
+  height: 74px;
+  position: relative;
+  .menuwraper {
+    z-index: 900;
+    width: 100%;
+    background-color: $orange;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+  }
+  .logo {
+    padding: 0.5em 0;
+    width: 228px;
+    float: left;
+    img {
+      vertical-align: middle;
+      width: 100%;
+      height: auto;
+      border: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+#menu-primary-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: inline-block;
+  overflow: hidden;
+  li {
+    display: inline;
+    float: left;
+    margin-left: 25px;
+    a {
+      font-style: italic;
+      font-size: 20px;
+      color: $white;
+      text-decoration: none;
+      padding: 0px 3px;
+      display: inline-block;
+      &:hover {
+        color: $orange-light;
+        border-bottom: 2px solid $orange-light;
+      }
+    }
+  }
+}
+
+#menu-secondary-navigation {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  li {
+    float: left;
+    a {
+      color: $white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+}
+
+#intro {
+  margin-top: 81px;
+  margin-bottom: 4em;
+  display: block;
+  overflow: hidden;
+  h1 {
+    width: 100%;
+    padding: 0;
+    float: none;
+    font-size: 4.286em;
+    line-height: 1.15em;
+    margin: 0 0 0.4em 0;
+    letter-spacing: -0.018em;
+  }
+  p {
+    float: none;
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.571em;
+  }
+}
+
+#interview-number {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(255, 56, 24);
+  background-image: none;
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  color: rgb(255, 255, 255);
+  display: block;
+  float: left;
+  font-family: Arvo, serif;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 100;
+  overflow: hidden;
+  line-height: 1em;
+  list-style-type: decimal;
+  margin-right: 0.429em;
+  margin-top: 0.1em;
+  padding: 0.4em 0.55em 0.4em 0.45em;
+  text-align: center;
+}
+
+#interview {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  width: 1200px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1em;
+  width: 100%;
+  float: right;
+  padding-left: calc(30% + 20px);
+}
+p {
+  font-size: 1.3em;
+  line-height: 2em;
+  float: right;
+  clear: right;
+  width: calc(70% - 20px);
+}
+aside {
+  float: left;
+  clear: left;
+  padding: 1.5em;
+  background: $orange;
+  color: #fff;
+  width: calc(30% - 20px);
+}
+blockquote {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  margin: 4.5em 0 6em;
+  padding: 0.5em 2.7em;
+  line-height: 1.429em;
+  font-size: 2em;
+  background: #F3F3F3;
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url('../images/quote-mark.png') $orange no-repeat center 20px;
+  }
+}  
+
+.fullscreen-image {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    font-style: italic;
+    color: #CCC;
+    padding: 3px 5px;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    a {
+      text-decoration: none;
+      color: #BCBCBC;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+footer {
+  display: block;
+  overflow: hidden;
+  min-height: 500px;
+  background: #888;
+}
