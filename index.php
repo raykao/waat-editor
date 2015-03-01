@@ -12,7 +12,6 @@
   <div id="interview" class="editable container"></div>
 </article>
 <footer>
-  
 </footer>
 
 <?php include('footer.php'); ?>
